@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #14495E;
+}
+.eyes {
+  position: absolute;
+  top: 30%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+}
+
+.eye-sclera {
+  width: 120px;
+  height: 150px;
+  background: radial-gradient(#FFF, #A8A9B3);
+  display: inline-block;
+  margin: 40px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.eye-iris {
+  width: 80px;
+  height: 80px;
+  background: repeating-conic-gradient(#FFDD00 0 18deg, #FFC300 0 36deg);
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.eye-pupil {
+  width: 50px;
+  height: 50px;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.eye-reflection {
+  width: 30px;
+  height: 30px;
+  background: #FFF;
+  position: absolute;
+  top: 30%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 3;
+  opacity: 0.9;
+}
+
+.eyelid {
+  width: 120px;
+  height: 40px;
+  background: radial-gradient(#0d303d, #14495E);
+  z-index: 5;
+  position: relative;
+}
+
+.mouth {
+  right: 50%;
+  background:#000;
+  width:140px;
+  height:70px;
+  border-bottom-right-radius: 75px;
+  border-bottom-left-radius: 75px;
+  color: #FFF;
+  position:absolute;  
+  transform: translate(50%, 60%);
+}
+
+.tooth {
+  left: 15%;
+  width:0;
+  height:0;
+  text-align: center;
+  border-right:15px solid transparent;
+  border-left:15px solid transparent;
+  border-top:30px solid #FFF;
+  position:absolute;
+  z-index: 3;
+}
+
+.nose {
+  width: 60px;
+  height: 60px;
+  background: #14495E;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 130%);
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.nostril {
+  width: 10px;
+  height: 10px;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+.nav-bottom {
+  position: absolute;
+  text-align: center;
+  top: 160%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 6;
+}
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Eyes</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+  </head>
+  <link rel="stylesheet" href="./styles.css" />
+  <body>
+    <div class="eyes">
+      <div class="eye-sclera">
+          <div class="eye-iris">
+            <div class="eye-pupil"></div>
+            <div class="eye-reflection"></div>            
+          </div>
+          <div class="eyelid"></div>
+      </div>
+      <div class="eye-sclera">
+          <div class="eye-iris">
+            <div class="eye-pupil"></div>
+            <div class="eye-reflection"></div>
+          </div>
+          <div class="eyelid"></div>
+      </div>
+      <div class="nose" onclick="moveEye()">
+        <div class="nostril"></div>
+        <div class="nostril"></div>
+      </div>
+      <div class="mouth">
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+      </div>   
+      <div class="nav-bottom">
+        <button onclick="moveEye()">Move</button>
+        <button onclick="doBlink()">Blink</button>
+        <button onclick="changeIrisColor()">Iris Color</button>
+        <button onclick="changePupilSize()">Pupil Size</button>
+        <button onclick="resetEye()">Reset</button>
+      </div>
+    </div>
+  </body>
+  <script src="./eyes.js"></script>
+</html>
